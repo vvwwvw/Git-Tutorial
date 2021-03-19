@@ -1,0 +1,216 @@
+/* 언어설정 */
+@charset "UTF-8";
+
+/* 스킵 네비게이션 */
+#skip {}
+
+#skip a {
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    border: 1px solid #fff;
+    background: #333;
+    line-height: 30px;
+    width: 180px;
+    text-align: center;
+}
+
+#skip a:active,
+#skip a:focus {
+    top: 0;
+}
+
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+}
+
+#header {
+    height: 325px;
+    background: url(../img/header_bg.jpg) center top repeat-x;
+    /* background center top <<< 이미지 고정  repeat-x < x축으로만 반복 */
+}
+
+#contents {
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background: #333;
+}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {
+    width: 100%;
+    height: 200px;
+    background: #333;
+}
+
+#cont_tit {
+    width: 100%;
+    height: 200px;
+    background: #444
+}
+
+#cont_ban {
+    width: 100%;
+    height: 200px;
+    background: #555
+}
+
+#cont_cont {
+    background: #f6fdff;
+}
+
+
+
+/* 컨테이너 */
+.container {
+    width: 990px;
+    margin: 0 auto;
+    height: inherit;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+
+/* 헤더 */
+.header {}
+
+.header>.header-menu {
+    text-align: right;
+}
+
+.header>.header-menu>a {
+    color: #fff;
+    padding: 10px 0px 10px 13px;
+    display: inline-block;
+}
+
+/* a는 인라인구조 패딩이 먹힐려면 블록구조로 변경해야함 (display)*/
+.header>.header-menu>a:hover {
+    color: #666;
+}
+
+.header>.header-tit {
+    text-align: center;
+}
+
+.header>.header-tit>h1 {
+    background-color: #4aa8d4;
+    font-size: 28px;
+    padding: 5px 20px 6px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.header>.header-tit>a{
+    display:inline-block;
+    background-color: #2698cb;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 20px 6px 20px;
+    margin-top: -5px;
+}
+
+
+.header>.hearder-icon{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header>.hearder-icon>a{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: url(../img/icon.png);   
+    margin: 3px;
+}
+
+.header>.hearder-icon>a.icon1{
+    background-position: 0 0;
+}
+.header>.hearder-icon>a.icon2{
+    background-position: 0 -60px;
+}
+.header>.hearder-icon>a.icon3{
+    background-position: 0 -120px;
+}
+.header>.hearder-icon>a.icon4{
+    background-position: 0 -180px;
+}
+
+.header>.hearder-icon>a.icon1:hover{
+    background-position: -60px 0;
+}
+.header>.hearder-icon>a.icon2:hover{
+    background-position: -60px -60px;
+}
+.header>.hearder-icon>a.icon3:hover{
+    background-position: -60px -120px;
+}
+.header>.hearder-icon>a.icon4:hover{
+    background-position: -60px -180px;
+}
+
+
+
+/* 컨텐츠 */
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {
+    position: relative;
+    float: left;
+    width: 289px;
+    height: 363px;
+    margin: 0 30px 30px 0;
+    padding-right: 30px;
+}
+.cont .column.col1 {border-right: 1px solid #c8c8c8;}
+.cont .column.col2 {border-right: 1px solid #c8c8c8;}
+.cont .column.col3 {margin-right: 0; padding-right: 0;}
+.cont .column.col4 {border-right: 1px solid #c8c8c8;}
+.cont .column.col5 {border-right: 1px solid #c8c8c8;}
+.cont .column.col6 {margin-right: 0; padding-right: 0;}
+
+
+.cont .column .ico_img {display: block; width: 60px; height: 60px;
+background:  url(../img/icon.png) no-repeat; left: 0; top: 0; position: absolute;}
+.cont .column .ico_tit {padding-left: 70px;}
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+
+.cont .col1 .ico_img {background-position: 0px -240px;}
+.cont .col2 .ico_img {background-position: 0px -300px;}
+.cont .col3 .ico_img {background-position: 0px -360px;}
+.cont .col4 .ico_img {background-position: 0px -420px;}
+.cont .col5 .ico_img {background-position: 0px -480px;}
+.cont .col6 .ico_img {background-position: 0px -540px;}
+
+.cont .col1 .ico_img:hover {background-position: -60px -240px;}
+.cont .col2 .ico_img:hover {background-position: -60px -300px;}
+.cont .col3 .ico_img:hover {background-position: -60px -360px;}
+.cont .col4 .ico_img:hover {background-position: -60px -420px;}
+.cont .col5 .ico_img:hover {background-position: -60px -480px;}
+.cont .col6 .ico_img:hover {background-position: -60px -540px;}
+
+
+/* 게시판 */
+.notice {position: relative;}
+.notice h4 {font-style: 14px; color: #0093bd;padding-bottom: 3px; font-weight: bold;}
+.notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;} /*한줄효과*/
+.notice ul li a {font-size: 13px;}
+.notice a.more {position: absolute; right: 0;top: 0; display: block;
+background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* 게시판2 */
+.notice2 {position: relative; margin-top: 15px;}
+.notice2 h4 {font-style: 14px; color: #0093bd;padding-bottom: 3px; font-weight: bold;}
+.notice2 ul {}
+.notice2 ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice2 ul li a {float: left; width: 65%; background: #ccc;} /*한줄효과*/
+.notice2 ul li span {float: right; width: 30%;background: #ccc;}
+.notice2 a.more {position: absolute; right: 0;top: 0; display: block;
+    background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+    
